@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const equalBtn = document.getElementById("equalBtn");
 
     const displayDefault = "0";
-    display.textContent = displayDefault
-    let displayCurrVal = displayDefault
+    display.textContent = displayDefault;
+    let displayCurrVal = displayDefault;
 
     let shouldResetDisplay = false;
 
@@ -51,5 +51,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         display.textContent = displayCurrVal
     }
+
+    numberBtn.forEach(btn => btn.addEventListener("click", e => {
+        handleNumberInput(e.target.value);
+    }))
     
 })
