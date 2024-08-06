@@ -60,10 +60,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     numberBtn.forEach(btn => btn.addEventListener("click", e => {
+        if (shouldResetDisplay) {
+            resetCurrVal();
+        }
         handleNumberInput(e.target.value);
     }))
     
-    periodBtn.addEventListener("click", e => {
+    periodBtn.addEventListener("click", e => {  
         if (!displayCurrVal.includes(e.target.value)) {
             displayCurrVal += e.target.value;
             display.textContent = displayCurrVal;
