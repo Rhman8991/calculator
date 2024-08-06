@@ -40,6 +40,13 @@ document.addEventListener("DOMContentLoaded", () => {
         shouldResetDisplay = false;
     }
 
+    const resetCalculator = () => {
+        display.textContent = displayDefault;
+        displayCurrVal = displayDefault;
+        firstNumber = null;
+        secondNumber = null;
+    }
+
     const handleNumberInput = val => {
         if(displayCurrVal === displayDefault && val === "0") {
             displayCurrVal = val;
@@ -61,6 +68,10 @@ document.addEventListener("DOMContentLoaded", () => {
             displayCurrVal += e.target.value;
             display.textContent = displayCurrVal;
         }
+    })
+    
+    clearBtn.addEventListener("click", () => {
+        resetCalculator();
     })
 
 })
