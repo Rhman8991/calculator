@@ -28,4 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const clearBtn = document.getElementById("clearBtn");
     const bckspcBtn = document.getElementById("bckspcBtn");
     const equalBtn = document.getElementById("equalBtn");
+
+    const displayDefault = "0";
+    display.textContent = displayDefault
+    let displayCurrVal = displayDefault
 })
