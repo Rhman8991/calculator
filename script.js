@@ -15,4 +15,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 return divide(first, second);
         }
     }
+
+    let firstNumber = null;
+    let secondNumber = null;
+    let operator = null;
+
 })
