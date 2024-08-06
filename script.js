@@ -56,4 +56,11 @@ document.addEventListener("DOMContentLoaded", () => {
         handleNumberInput(e.target.value);
     }))
     
+    periodBtn.addEventListener("click", e => {
+        if (!displayCurrVal.includes(e.target.value)) {
+            displayCurrVal += e.target.value;
+            display.textContent = displayCurrVal;
+        }
+    })
+
 })
