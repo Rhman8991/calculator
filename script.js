@@ -32,4 +32,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const displayDefault = "0";
     display.textContent = displayDefault
     let displayCurrVal = displayDefault
+
+    const handleNumberInput = val => {
+        if(displayCurrVal === displayDefault && val === "0") {
+            displayCurrVal = val;
+        } else if (displayCurrVal === displayDefault && val !== "0") {
+            displayCurrVal = "";
+            displayCurrVal += val;
+        } else {
+            displayCurrVal += val
+        }
+        display.textContent = displayCurrVal
+    }
+
+    numberBtn.forEach(btn => btn.addEventListener("click", e => {
+        handleNumberInput(e.target.value)
+    }))
 })
