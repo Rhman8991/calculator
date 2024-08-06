@@ -20,4 +20,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let secondNumber = null;
     let operator = null;
 
+    const display = document.getElementById("display");
+    const numberBtn = document.querySelectorAll(".numBtn");
+    const operatorBtn = document.querySelectorAll(".operator");
+    const periodBtn = document.getElementById("periodBtn");
+    const percentBtn = document.getElementById("percentBtn");
+    const clearBtn = document.getElementById("clearBtn");
+    const bckspcBtn = document.getElementById("bckspcBtn");
+    const equalBtn = document.getElementById("equalBtn");
 })
