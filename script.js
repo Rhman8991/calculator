@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const display = document.getElementById("display");
     const numberBtn = document.querySelectorAll(".numBtn");
-    const operatorBtn = document.querySelectorAll(".operator");
+    const operatorBtn = document.querySelectorAll(".opBtn");
     const periodBtn = document.getElementById("periodBtn");
     const percentBtn = document.getElementById("percentBtn");
     const clearBtn = document.getElementById("clearBtn");
