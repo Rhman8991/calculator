@@ -74,4 +74,16 @@ document.addEventListener("DOMContentLoaded", () => {
         resetCalculator();
     })
 
+    bckspcBtn.addEventListener("click", () => {
+        if(displayCurrVal.length > 1) {
+            const removeVal = displayCurrVal.split("");
+            removeVal.pop()
+            displayCurrVal = removeVal.join("");
+            display.textContent = displayCurrVal
+        } else if (displayCurrVal.length === 1 && displayCurrVal !== displayDefault) {
+            displayCurrVal = displayDefault
+            display.textContent = displayCurrVal
+        }
+    })
+
 })
