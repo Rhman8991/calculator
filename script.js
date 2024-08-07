@@ -93,4 +93,19 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     })
 
+    const checkNumber = () => {
+        if (firstNumber === null) {
+            firstNumber = displayCurrVal;
+        } else if (firstNumber && secondNumber === null) {
+            secondNumber = displayCurrVal;
+        }
+    }
+
+    const calculateResult = () => {
+        const result = String(operate(operator, Number(firstNumber), Number(secondNumber)));
+        displayCurrVal = result;
+        secondNumber = null;
+        display.textContent = result;
+    }
+
 })
