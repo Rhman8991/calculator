@@ -137,7 +137,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     percentBtn.addEventListener("click", () => {
         if (displayCurrVal !== displayDefault) {
-            displayCurrVal = Number(displayCurrVal) / 100;
+            displayCurrVal = String(Number(displayCurrVal) / 100);
             display.textContent = displayCurrVal 
         }
     })
