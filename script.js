@@ -108,4 +108,18 @@ document.addEventListener("DOMContentLoaded", () => {
         display.textContent = result;
     }
 
+    operatorBtn.forEach(btn => btn.addEventListener("click", e => {
+        shouldResetDisplay = true;
+        
+        checkNumber()
+        
+        if (firstNumber && secondNumber) {
+            if (operator === null) {
+                operator = e.target.value
+            }
+            calculateResult()
+            firstNumber = displayCurrVal;
+        }
+        operator = e.target.value
+    }))
 })
