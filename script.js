@@ -130,6 +130,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 calculateResult();
                 operator = null;
                 firstNumber = null;
+                shouldResetDisplay = true;
             }
         }
     })
