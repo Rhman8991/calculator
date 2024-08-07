@@ -122,4 +122,15 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         operator = e.target.value
     }))
+
+    equalBtn.addEventListener("click", () => {
+        if (firstNumber) {
+            secondNumber = displayCurrVal;
+            if (firstNumber && secondNumber && operator) {
+                calculateResult();
+                operator = null;
+                firstNumber = null;
+            }
+        }
+    })
 })
