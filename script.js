@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     let shouldResetDisplay = false;
 
-    const resetCurrVal = () => {
+    const resetDisplay = () => {
         displayCurrVal = displayDefault;
         shouldResetDisplay = false;
     }
@@ -61,14 +61,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
     numberBtn.forEach(btn => btn.addEventListener("click", e => {
         if (shouldResetDisplay) {
-            resetCurrVal();
+            resetDisplay();
         }
         handleNumberInput(e.target.value);
     }))
     
     periodBtn.addEventListener("click", e => {
         if (shouldResetDisplay) {
-            resetCurrVal();
+            resetDisplay();
         }
 
         if (!displayCurrVal.includes(e.target.value)) {
