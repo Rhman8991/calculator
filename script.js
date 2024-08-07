@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const add = (first, second) => first + second;
     const substract = (first, second) => first - second;
     const multiply = (first, second) => first * second;
-    const divide = (first, second) => first / second;
+    const divide = (first, second) => second === 0 ? "Error" : first / second;
     function operate (op, first, second) {
         switch (op) {
             case "+":
