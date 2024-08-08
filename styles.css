@@ -24,10 +24,14 @@ body {
 }
 
 #display {
-    background-color: azure;
-    width: 316px;
-    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 324px;
+    height: 100px;
+    padding: 16px;
     font-size: 56px;
+    background-color: azure;
 }
 
 #buttons-container {
