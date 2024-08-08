@@ -21,6 +21,7 @@ body {
     align-items: center;
     border: 1px solid black;
     border-radius: 10px;
+    background-color: #bcbabb;
 }
 
 #display {
@@ -31,7 +32,8 @@ body {
     height: 100px;
     padding: 16px;
     font-size: 56px;
-    background-color: azure;
+    background-color: #a8af83;
+    ;
 }
 
 #buttons-container {
@@ -52,10 +54,24 @@ button {
     width: 60px;
     height: 60px;
     font-size: 24px;
+    background-color: #343434;
+    color: #efedee;
     border-radius: 10px;
+}
+
+button.opBtn {
+    background-color: #45717e;
+}
+
+button#clearBtn {
+    background-color: #db7239;
+}
+
+button#bckspcBtn {
+    background-color: #db7239;
 }
 
 #equalBtn {
     height: 124px;
+    background-color: #5e5c5d;
 }
-
