@@ -13,11 +13,9 @@ body {
 
 #calculator {
     margin: 0 auto;
-    width: 350px;
-    height: 400px;
-    padding: 16px;
+    padding: 54px 8px 24px;
     display: flex;
-    gap: 6px;
+    gap: 24px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -34,7 +32,7 @@ body {
 
 #buttons-container {
     display: flex;
-    gap: 4px;
+    gap: 6px;
     align-items: center;
     justify-content: center;
 }
@@ -42,7 +40,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 4px;
+    gap: 6px;
 }
 
 
