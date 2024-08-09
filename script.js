@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const displayDefault = "0";
     display.textContent = displayDefault;
     let displayCurrVal = displayDefault;
-    let maxDigits = 9;
+    const maxDigits = 9;
 
     let shouldResetDisplay = false;
 
@@ -113,10 +113,10 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     const calculateResult = () => {
-        const result = String(operate(operator, Number(firstNumber), Number(secondNumber)));
-        displayCurrVal = result;
+        const result = operate(operator, Number(firstNumber), Number(secondNumber));
+        displayCurrVal = checkResultLength(result);
         secondNumber = null;
-        display.textContent = result;
+        display.textContent = displayCurrVal;
     }
 
     operatorBtn.forEach(btn => btn.addEventListener("click", e => {
