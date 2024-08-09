@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const displayDefault = "0";
     display.textContent = displayDefault;
     let displayCurrVal = displayDefault;
+    let maxDigits = 9;
 
     let shouldResetDisplay = false;
 
@@ -45,6 +46,16 @@ document.addEventListener("DOMContentLoaded", () => {
         displayCurrVal = displayDefault;
         firstNumber = null;
         secondNumber = null;
+    }
+
+    const checkResultLength = result => {
+        let resultString = String(result);
+        if (resultString.length > maxDigits - 1) {
+            resultString = Number(resultString).toExponential(maxDigits - 1);
+            return String(resultString).slice(0, maxDigits);
+        } else {
+            return resultString;
+        }
     }
 
     const handleNumberInput = val => {
