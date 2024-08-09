@@ -74,6 +74,11 @@ document.addEventListener("DOMContentLoaded", () => {
         if (shouldResetDisplay) {
             resetDisplay();
         }
+        if (displayCurrVal.length > maxDigits - 1) {
+            return
+        } else {
+            display.textContent = displayCurrVal 
+        }
         handleNumberInput(e.target.value);
     }))
     
